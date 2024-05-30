@@ -10,7 +10,8 @@ module Sprockets
         syntax: :scss,
         cache: false,
         read_cache: false,
-        style: :compressed
+        style: :compressed,
+        quiet_deps: false
       }.merge(options).freeze
       @cache_key = SecureRandom.uuid
     end
